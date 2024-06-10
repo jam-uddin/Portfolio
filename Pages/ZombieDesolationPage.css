@@ -28,6 +28,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-left: 15px; /* Move the image slightly to the right */
 }
 
 h1 {
@@ -36,24 +37,18 @@ h1 {
     text-align: center;
 }
 
-h2, h3, h4 {
+h2 {
     color: #e0e0e0;
     margin-top: 20px;
-}
-
-h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 h3 {
+    color: #c0c0c0;
+    margin-top: 15px;
     font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 p {
@@ -72,7 +67,14 @@ li {
     margin: 5px 0;
 }
 
-.video-link, .back-button {
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.back-button,
+.play-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -84,6 +86,7 @@ li {
     transition: background-color 0.3s;
 }
 
-.video-link:hover, .back-button:hover {
+.back-button:hover,
+.play-button:hover {
     background-color: #555555;
 }

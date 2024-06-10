@@ -72,7 +72,8 @@ li {
     margin: 5px 0;
 }
 
-.video-link, .back-button {
+.back-button,
+.play-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -84,6 +85,7 @@ li {
     transition: background-color 0.3s;
 }
 
-.video-link:hover, .back-button:hover {
+.back-button:hover,
+.play-button:hover {
     background-color: #555555;
 }
