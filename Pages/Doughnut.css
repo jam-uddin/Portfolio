@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-left: 15px; /* Move the image slightly to the right */
+    margin-left: 0px; /* Move the image slightly to the right */
 }
 
 h1 {
