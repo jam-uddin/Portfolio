@@ -351,6 +351,119 @@ nav ul li a:hover::after {
             color: #080808;
         }
 
+/* Social Media Section */
+#social-media {
+    padding: 80px 10%;
+    background: #080808;
+}
+
+#social-media .sub-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.work {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #262626;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .work:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .work .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .work:hover .layer {
+        opacity: 1;
+    }
+
+    .work .layer h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #ff004f;
+    }
+
+    .work .layer p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .work .layer a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        border: 2px solid #ff004f;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+        .work .layer a:hover {
+            background: #ff004f;
+            color: #080808;
+        }
+
+.learn-more-btn {
+    display: block;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin: 40px auto 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+    .learn-more-btn {
+        background-color: #ff004f;
+        transform: translateY(-2px);
+    }
+
 /* Hidden Work Section */
 .hidden-work {
     display: none;
